@@ -15,7 +15,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class SeleniumTest {
 
@@ -25,7 +26,15 @@ public class SeleniumTest {
     @Test
     public  void checkTitle() throws InterruptedException {
         System.out.println("Selenium Test Starting.......");
-        WebDriver driver = new FirefoxDriver();
+        Capabilities caps = new DesiredCapabilities();
+                ((DesiredCapabilities) caps).setJavascriptEnabled(true);                
+                ((DesiredCapabilities) caps).setCapability("takesScreenshot", true);  
+                ((DesiredCapabilities) caps).setCapability(
+                        PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
+                        "/opt/phantomjs/bin/phantomjs"
+                    );
+        WebDriver   driver = new  PhantomJSDriver(caps);
+        //WebDriver driver = new FirefoxDriver();
         Thread.sleep(10000L);
         driver.get(URL);
         Thread.sleep(10000L);
