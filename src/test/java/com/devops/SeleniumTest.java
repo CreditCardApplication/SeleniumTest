@@ -25,14 +25,10 @@ public class SeleniumTest {
     @Test
     public  void checkTitle() throws InterruptedException {
         System.out.println("Selenium Test Starting.......");
-        Capabilities caps = new DesiredCapabilities();
-                ((DesiredCapabilities) caps).setJavascriptEnabled(true);                
-                ((DesiredCapabilities) caps).setCapability("takesScreenshot", true);  
-                ((DesiredCapabilities) caps).setCapability(
-                        PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
-                        "/opt/phantomjs/bin/phantomjs"
-                    );
-        WebDriver   driver = new  PhantomJSDriver(caps);
+        DesiredCapabilities dCaps = new DesiredCapabilities();	  
+        dCaps.setJavascriptEnabled(true);
+	   dCaps.setCapability("takesScreenshot", false);
+        WebDriver driver = new PhantomJSDriver(dCaps);
         //WebDriver driver = new FirefoxDriver();
         Thread.sleep(10000L);
         driver.get(URL);
