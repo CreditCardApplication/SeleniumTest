@@ -19,11 +19,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumTest {
 
-    static String URL = "http://creditcardapp.centralindia.cloudapp.azure.com:8000/CreditCardApp/";
-    static String title = "Credit Card Application";
+     String URL = "http://creditcardapp.centralindia.cloudapp.azure.com:8000/CreditCardApp/";
+     String title = "Credit Card Application";
 
     @Test
-    public static void checkTitle() throws InterruptedException {
+    public  void checkTitle() throws InterruptedException {
         System.out.println("Selenium Test Starting.......");
         WebDriver driver = new FirefoxDriver();
         Thread.sleep(10000L);
