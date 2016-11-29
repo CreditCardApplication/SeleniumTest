@@ -29,6 +29,7 @@ public class SeleniumTest {
         DesiredCapabilities dCaps = new DesiredCapabilities();	  
         dCaps.setJavascriptEnabled(true);
 	dCaps.setCapability("takesScreenshot", false);
+	dCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/opt/phantomjs/bin");
         WebDriver driver = new PhantomJSDriver(dCaps);
         //WebDriver driver = new FirefoxDriver();
         Thread.sleep(10000L);
