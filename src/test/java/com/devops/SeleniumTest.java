@@ -23,7 +23,7 @@ public class SeleniumTest {
     @Test
     public static void checkTitle() throws InterruptedException {
         System.out.println("Selenium Test Starting.......");
-        Webdriver driver = new FirefoxDriver();
+        WebDriver driver = new FirefoxDriver();
         Thread.sleep(10000L);
         driver.get(URL);
         Thread.sleep(10000L);
