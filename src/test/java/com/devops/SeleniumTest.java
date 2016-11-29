@@ -8,6 +8,8 @@
  * written consent of HSBC Holdings plc.
  */
 package com.devops;
+import org.junit.Test;
+import junit.framework.Assert;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
