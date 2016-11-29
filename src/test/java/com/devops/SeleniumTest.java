@@ -25,7 +25,7 @@ public class SeleniumTest {
 
     @Test
     public  void checkTitle() throws InterruptedException {
-        System.out.println("Selenium Test Starting.......");
+        System.out.println("**************    ******   Selenium Test Starting ******   *****************");
         DesiredCapabilities dCaps = new DesiredCapabilities();	  
         dCaps.setJavascriptEnabled(true);
 	dCaps.setCapability("takesScreenshot", false);
@@ -38,7 +38,7 @@ public class SeleniumTest {
         Assert.assertEquals(title, driver.getTitle());
         System.out.println(" Verified that the title is as expected.. Ending Test");
         Thread.sleep(10000L);
-        System.out.println("Closing Browser and qutting selenium");
+        System.out.println("**************   *******  Closing Browser and quitting Selenium  *******  ***********");
         driver.quit();
     }
 
