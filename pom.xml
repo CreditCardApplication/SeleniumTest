@@ -30,9 +30,9 @@
 </dependency>
       
       <!-- https://mvnrepository.com/artifact/com.github.detro.ghostdriver/phantomjsdriver -->
-      <dependency>    
+      <dependency>
         <groupId>com.github.detro.ghostdriver</groupId>
-        <artifactId>phantomjsdriver</artifactId>    
+        <artifactId>phantomjsdriver</artifactId> 
         <version>1.1.0</version>
       </dependency>
       
