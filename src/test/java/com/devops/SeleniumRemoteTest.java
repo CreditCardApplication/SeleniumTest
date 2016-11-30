@@ -25,7 +25,7 @@ public class SeleniumRemoteTest {
 
     @Test
     public  void checkTitle() throws InterruptedException {
-        System.out.println("**************    ******   Selenium Test Starting ******   *****************");
+        System.out.println("**************    ******   Selenium Test Starting *******   *****************");
         DesiredCapabilities dCaps = DesiredCapabilities.chrome();	  
         //dCaps.setJavascriptEnabled(true);
 		//dCaps.setCapability("takesScreenshot", false);
