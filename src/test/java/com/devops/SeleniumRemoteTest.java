@@ -30,7 +30,7 @@ public class SeleniumTest {
         //dCaps.setJavascriptEnabled(true);
 		//dCaps.setCapability("takesScreenshot", false);
 		//dCaps.setCapability("phantomjs.binary.path", "/opt/phantomjs/bin/phantomjs");
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://creditcardapp.centralindia.cloudapp.azure.com:4444/", dCaps);
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://creditcardapp.centralindia.cloudapp.azure.com:4444/", dCaps));
         driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
