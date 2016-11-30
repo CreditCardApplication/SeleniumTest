@@ -35,7 +35,7 @@ public class SeleniumRemoteTest {
         //dCaps.setJavascriptEnabled(true);
 		//dCaps.setCapability("takesScreenshot", false);
 		//dCaps.setCapability("phantomjs.binary.path", "/opt/phantomjs/bin/phantomjs");
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://52.172.188.162:4444/wd/hub"), dCaps);
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://10.0.0.4:4444/wd/hub"), dCaps);
         driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
