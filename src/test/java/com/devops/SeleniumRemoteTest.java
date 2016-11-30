@@ -29,7 +29,7 @@ public class SeleniumRemoteTest {
      String title = "Credit Card Application";
 
     @Test
-    public  void checkTitle() throws InterruptedException {
+    public  void checkTitle() throws InterruptedException, MalformedURLException {
         System.out.println("**************    ******   Selenium Test Starting *******   *****************");
         DesiredCapabilities dCaps = DesiredCapabilities.chrome();	  
         //dCaps.setJavascriptEnabled(true);
