@@ -18,7 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class SeleniumTest {
+public class SeleniumRemoteTest {
 
      String URL = "http://creditcardapp.centralindia.cloudapp.azure.com:8000/CreditCardApp/";
      String title = "Credit Card Application";
